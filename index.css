@@ -11,7 +11,7 @@
   width: 962px;
   min-height: 521px;
   height: auto;
-  margin: 248px auto;
+  margin: 60px auto;
 }
 
 .u-section-1 .u-text-1 {
@@ -125,7 +125,7 @@
 }
 
 .u-section-2 .u-layout-wrap-1 {
-  margin: 29px auto 29px 0;
+  margin: 0 0 59px;
 }
 
 .u-section-2 .u-image-1 {
@@ -167,7 +167,6 @@
   }
 
   .u-section-2 .u-layout-wrap-1 {
-    margin-top: 0;
     margin-right: initial;
     margin-left: initial;
   }
