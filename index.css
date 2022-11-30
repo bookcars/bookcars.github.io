@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/pexels-photo-3136673.jpeg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/Allianz-Arena-Muenchen-DE-Objekt3.jpg");
   background-position: 50% 50%;
 }
 
@@ -25,7 +25,6 @@
   letter-spacing: 2px;
   text-transform: none;
   width: 744px;
-  --animation-custom_in-scale: 1;
   margin: 20px auto 0;
 }
 
@@ -73,6 +72,7 @@
 
   .u-section-1 .u-text-1 {
     animation-duration: 1000ms;
+    --animation-custom_in-scale: 1;
   }
 }
 
