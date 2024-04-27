@@ -64,7 +64,7 @@
 
 .u-section-1 .u-btn-3 {
   border-style: none;
-  font-family: Poppins-SemiBold-30;
+  font-family: Poppins-Regular;
   text-transform: uppercase;
   font-size: 1.25rem;
   letter-spacing: 3px;
@@ -207,7 +207,7 @@
 
 .u-section-2 .u-btn-1 {
   border-style: none;
-  font-family: Poppins-Regular-28;
+  font-family: Poppins-Regular;
 }
 
 @media (max-width: 1199px) {
@@ -705,8 +705,8 @@
   background-image: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: Poppins-Regular;
   font-weight: 300;
-  font-family: Poppins-Regular-28;
   margin: 26px auto 0;
 }
 
@@ -1146,12 +1146,12 @@
 }
 
 .u-section-7 .u-btn-1 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
   border-style: none;
-  font-family: Poppins-Regular-28;
+  font-family: Poppins-Regular;
   margin: 37px auto 0;
 }
 
@@ -1714,7 +1714,8 @@
 .u-section-10 .u-btn-1 {
   background-image: none;
   border-style: none;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  font-family: Poppins-Regular;
 }
 
 @media (max-width: 767px) {
@@ -1759,13 +1760,13 @@
   font-weight: 400;
   src: url(fonts/Poppins-Light-31.ttf);
 }@font-face {
-  font-family: 'Poppins-Regular-28';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/Poppins-Regular-28.ttf);
-}@font-face {
   font-family: 'Poppins-Regular';
   font-style: normal;
   font-weight: 400;
   src: url(fonts/Poppins-Regular.ttf);
+}@font-face {
+  font-family: 'Poppins-Regular-28';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Poppins-Regular-28.ttf);
 }
