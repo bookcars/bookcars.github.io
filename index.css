@@ -66,9 +66,8 @@
   border-style: none;
   font-family: Poppins-Regular;
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   letter-spacing: 3px;
-  font-weight: 700;
   margin: 30px auto 0;
   padding: 14px 42px 15px 41px;
 }
@@ -92,6 +91,10 @@
 
   .u-section-1 .u-text-2 {
     margin-top: 31px;
+  }
+
+  .u-section-1 .u-btn-3 {
+    font-weight: normal;
   }
 }
 
