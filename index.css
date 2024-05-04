@@ -9,8 +9,9 @@
 
 .u-section-1 .u-group-1 {
   width: 962px;
-  min-height: 382px;
-  margin: 60px auto;
+  min-height: 384px;
+  height: auto;
+  margin: 276px auto 60px;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -62,84 +63,74 @@
   padding: 0;
 }
 
+.u-section-1 .u-form-1 {
+  height: 79px;
+  margin: 4px 229px 0 256px;
+}
+
+.u-section-1 .u-input-1 {
+  background-image: none;
+}
+
 .u-section-1 .u-btn-3 {
-  border-style: none;
   font-family: Poppins-Regular;
+  letter-spacing: 1px;
+  border-style: none;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.25rem;
-  letter-spacing: 3px;
-  font-weight: normal;
-  margin: 30px auto 0;
-  padding: 14px 42px 15px 41px;
+  background-image: none;
+  padding: 12px 31px 12px 29px;
 }
 
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
-    min-height: 415px;
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
+    width: 940px;
+    height: auto;
   }
 
   .u-section-1 .u-text-1 {
     animation-duration: 1000ms;
     --animation-custom_in-scale: 1;
-    width: auto;
-    margin-top: 18px;
-    margin-left: 16px;
-    margin-right: 16px;
   }
 
-  .u-section-1 .u-text-2 {
-    margin-top: 31px;
+  .u-section-1 .u-form-1 {
+    width: 478px;
+    margin-right: 218px;
+    margin-left: 245px;
   }
 }
 
 @media (max-width: 991px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 871px;
-  }
-
   .u-section-1 .u-group-1 {
-    min-height: 496px;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
+    width: 720px;
   }
 
-  .u-section-1 .u-text-1 {
-    margin-left: 0;
-    margin-right: 0;
+  .u-section-1 .u-form-1 {
+    margin-right: 108px;
+    margin-left: 135px;
   }
 }
 
 @media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 985px;
-  }
-
   .u-section-1 .u-group-1 {
-    min-height: 610px;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
+    width: 540px;
+    min-height: 557px;
   }
 
   .u-section-1 .u-text-2 {
     width: 540px;
   }
+
+  .u-section-1 .u-form-1 {
+    margin-top: 20px;
+    margin-right: 18px;
+    margin-left: 45px;
+  }
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 876px;
-  }
-
   .u-section-1 .u-group-1 {
-    min-height: 501px;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
+    width: 340px;
   }
 
   .u-section-1 .u-text-1 {
@@ -153,9 +144,13 @@
 
   .u-section-1 .u-text-3 {
     font-size: 0.75rem;
-    width: auto;
-    margin-left: 0;
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
     margin-right: 0;
+    margin-left: 0;
   }
 } .u-section-2 {
   background-image: none;
@@ -712,16 +707,6 @@
   margin: 19px auto 0;
 }
 
-.u-section-5 .u-btn-1 {
-  border-style: solid;
-  background-image: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: Poppins-Regular;
-  font-weight: 300;
-  margin: 19px auto 0;
-}
-
 .u-section-5 .u-image-1 {
   min-height: 679px;
   background-image: url("images/pexelsphoto3874342.jpeg");
@@ -816,10 +801,6 @@
     margin-left: 75px;
   }
 
-  .u-section-5 .u-btn-1 {
-    margin-top: 29px;
-  }
-
   .u-section-5 .u-image-1 {
     min-height: 580px;
   }
@@ -854,11 +835,6 @@
     margin-top: 22px;
     margin-right: 7px;
     margin-left: 25px;
-  }
-
-  .u-section-5 .u-btn-1 {
-    margin-top: 25px;
-    margin-right: 81px;
   }
 
   .u-section-5 .u-image-1 {
@@ -1171,16 +1147,6 @@
   margin: 20px 0 0;
 }
 
-.u-section-7 .u-btn-1 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  border-style: none;
-  font-family: Poppins-Regular;
-  margin: 37px auto 0;
-}
-
 .u-section-7 .u-image-1 {
   background-image: url("images/02be7258d3a1a4c4480e9bfa69701086d24590de71d7e8faa027b7c929665d55332c6cd03c5b32c2d27f8004c7c4c09c10fff5b1724f81289d8cf6_1280.jpg");
   min-height: 567px;
@@ -1211,7 +1177,7 @@
   }
 
   .u-section-7 .u-icon-1 {
-    margin-top: 0;
+    margin-top: 48px;
   }
 
   .u-section-7 .u-text-1 {
@@ -1235,6 +1201,10 @@
   .u-section-7 .u-container-layout-1 {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .u-section-7 .u-icon-1 {
+    margin-top: 0;
   }
 
   .u-section-7 .u-image-1 {
