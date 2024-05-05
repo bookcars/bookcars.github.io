@@ -10,7 +10,8 @@
 .u-section-1 .u-group-1 {
   width: 962px;
   min-height: 384px;
-  margin: 276px auto 60px;
+  height: auto;
+  margin: 60px auto;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -84,6 +85,7 @@
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     width: 940px;
+    height: auto;
   }
 
   .u-section-1 .u-text-1 {
