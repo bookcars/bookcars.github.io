@@ -161,11 +161,6 @@
 .u-section-2 .u-text-1 {
   width: 734px;
   font-size: 2.25rem;
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
   font-family: Poppins-Regular-28;
   font-weight: 700;
   margin: 57px auto 0;
@@ -249,6 +244,11 @@
 
   .u-section-2 .u-text-1 {
     font-size: 1.875rem;
+    --animation-custom_in-translate_x: 0px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
   }
 
   .u-section-2 .u-layout-wrap-1 {
@@ -387,11 +387,6 @@
   letter-spacing: 0px;
   line-height: 1;
   text-transform: none;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
   font-family: Poppins-Regular-28;
   font-weight: 700;
   margin: 61px 8px 0 4px;
@@ -402,11 +397,6 @@
   letter-spacing: 0px;
   font-weight: 400;
   text-transform: none;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
   width: 426px;
   margin: 19px auto 0;
 }
@@ -436,11 +426,21 @@
 
   .u-section-3 .u-text-1 {
     font-size: 1.875rem;
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
     margin-left: 0;
     margin-right: 0;
   }
 
   .u-section-3 .u-text-2 {
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
     width: 418px;
   }
 
@@ -835,11 +835,6 @@
 
 .u-section-5 .u-text-1 {
   font-size: 2.25rem;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
   font-family: Poppins-Regular-28;
   margin: 20px 0 0;
 }
@@ -886,6 +881,11 @@
 
   .u-section-5 .u-text-1 {
     font-size: 1.875rem;
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
   }
 
   .u-section-5 .u-image-1 {
@@ -1263,11 +1263,6 @@
 
 .u-section-7 .u-text-1 {
   font-size: 2.25rem;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
   font-family: Poppins-Regular-28;
   font-weight: 700;
   margin: 0 0 0 20px;
@@ -1295,6 +1290,11 @@
   .u-section-7 .u-text-1 {
     font-size: 1.875rem;
     margin-left: 16px;
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
   }
 }
 
@@ -1392,23 +1392,18 @@
 .u-section-8 .u-text-1 {
   font-size: 3rem;
   font-weight: 700;
-  --animation-custom_in-translate_x: -200px;
-  --animation-custom_in-translate_y: 0px;
-  --animation-custom_in-opacity: 0;
-  --animation-custom_in-rotate: 0deg;
-  --animation-custom_in-scale: 1;
   margin: 0 auto;
 }
 
 .u-section-8 .u-text-2 {
   font-family: Poppins-Regular-28;
-  margin: 11px auto 0;
+  margin: 10px auto 0;
 }
 
 .u-section-8 .u-form-1 {
   height: 340px;
   width: 570px;
-  margin: 24px auto 0;
+  margin: 25px auto 0;
 }
 
 .u-section-8 .u-btn-1 {
@@ -1416,6 +1411,16 @@
   border-style: none;
   font-size: 1rem;
   font-family: Poppins-Regular;
+}
+
+@media (max-width: 1199px) {
+  .u-section-8 .u-text-1 {
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
+  }
 }
 
 @media (max-width: 767px) {
