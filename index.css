@@ -1454,6 +1454,8 @@
   .u-section-8 .u-form-1 {
     width: 320px;
   }
+}.grecaptcha-badge { 
+  visibility: hidden !important;
 }@font-face {
   font-family: 'Poppins-SemiBold-30';
   font-style: normal;
