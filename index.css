@@ -1455,7 +1455,7 @@
     width: 320px;
   }
 }.grecaptcha-badge { 
-  visibility: hidden !important;
+  visibility: visible !important;
 }@font-face {
   font-family: 'Poppins-SemiBold-30';
   font-style: normal;
