@@ -12,29 +12,6 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.8.2, nicepage.com">
-    <script src="https://www.google.com/recaptcha/api.js?render=6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4"></script>
-    <script> window.onload = function(){	  
-  const form1 = document.getElementById('form1');
-form1.addEventListener('submit', function(event) {
-    event.preventDefault();
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4', {action: 'submit'}).then(function(token) {
-            form1.querySelector('#g-recaptcha-response').value = token;
-            form1.submit();
-        });
-    });
-});
-const form2 = document.getElementById('form2');
-form2.addEventListener('submit', function(event) {
-    event.preventDefault();
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6Les66kUAAAAANyLrgkl7iuN4JUpNlB5upaMovI4', {action: 'submit'}).then(function(token) {
-            form2.querySelector('#g-recaptcha-response').value = token;
-            form2.submit();
-        });
-    });
-});
-} </script>
     
     <link rel="icon" href="images/favicon.png">
     
@@ -132,7 +109,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
             <p class="u-align-center u-custom-font u-text u-text-body-alt-color u-text-3">Built with&nbsp;<a href="https://react.dev/" class="u-active-none u-border-2 u-border-active-custom-color-12 u-border-custom-color-12 u-border-hover-custom-color-12 u-border-no-left u-border-no-right u-border-no-top u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">React</a>, Powered by <a href="https://stripe.com/" class="u-active-none u-border-2 u-border-active-custom-color-12 u-border-custom-color-12 u-border-hover-custom-color-12 u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-white u-top-left-radius-0 u-top-right-radius-0 u-btn-2">Stripe</a>
             </p>
             <div class="u-form u-form-1">
-              <form id="form1" action="https://usebasin.com/f/dfa6479641e4" method="POST" class="u-clearfix u-form-custom-backend u-form-horizontal u-form-spacing-0 u-inner-form" style="padding: 15px;" source="custom" redirect="true">
+              <form action="https://formspree.io/f/mqaklewj" method="POST" class="u-clearfix u-form-custom-backend u-form-horizontal u-form-spacing-0 u-inner-form" style="padding: 15px;" source="custom" redirect="true">
                 <div class="u-form-email u-form-group u-label-none">
                   <label for="email-4542" class="u-label">Email</label>
                   <input type="email" placeholder="Enter your email address" id="email-4542" name="email" class="u-border-2 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="">
@@ -143,8 +120,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
                 </div>
                 <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
                 <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                <input type="hidden" name="g-recaptcha-version" value="v3">
+                <input type="hidden" value="" name="recaptchaResponse">
               </form>
             </div>
           </div>
@@ -250,10 +226,18 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
                 <h4 class="u-align-center u-custom-font u-text u-text-body-alt-color u-text-1">Features</h4>
                 <ul class="u-align-left u-text u-text-body-alt-color u-text-2">
                   <li> Supplier management</li>
+                  <li>
+                    <a href="https://github.com/aelassas/bookcars/wiki/Supplier-Contracts" class="u-active-none u-border-1 u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-top-left-radius-0 u-top-right-radius-0 u-btn-1">Supplier contracts</a>
+                    <br>
+                  </li>
                   <li>Ready for one or multiple suppliers<br>
                   </li>
                   <li> Car fleet management</li>
                   <li>Location, country, parking spots and&nbsp;map features<br>
+                  </li>
+                  <li>
+                    <a href="https://github.com/aelassas/bookcars/wiki/Price-Calculation" class="u-active-none u-border-1 u-border-white u-bottom-left-radius-0 u-bottom-right-radius-0 u-btn u-button-link u-button-style u-hover-none u-none u-radius-0 u-text-body-alt-color u-top-left-radius-0 u-top-right-radius-0 u-btn-2">Dynamic price calculation</a>
+                    <br>
                   </li>
                   <li>Booking management<br>
                   </li>
@@ -418,7 +402,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
             <h3 class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-default u-text-1"> How can we help?</h3>
             <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-default u-text-2"> Fill out our contact form and we will get back to you ASAP.</p>
             <div class="u-form u-form-1">
-              <form id="form2" action="https://usebasin.com/f/dfa6479641e4" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form" redirect="true">
+              <form action="https://formspree.io/f/mqaklewj" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="custom" name="form" redirect="true">
                 <div class="u-form-group u-form-name">
                   <label for="name-a97b" class="u-form-control-hidden u-label">Name</label>
                   <input type="text" placeholder="Enter your name" id="name-a97b" name="name" class="u-border-1 u-border-grey-30 u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white" required="">
@@ -437,8 +421,7 @@ border-width: 1px !important; border-color: #f2f2f2 !important; borders: bottom 
                 </div>
                 <div class="u-form-send-message u-form-send-success"></div>
                 <div class="u-form-send-error u-form-send-message"></div>
-                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-                <input type="hidden" name="g-recaptcha-version" value="v3">
+                <input type="hidden" value="" name="recaptchaResponse">
               </form>
             </div>
           </div>

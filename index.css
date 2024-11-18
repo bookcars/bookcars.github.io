@@ -401,6 +401,18 @@
   margin: 19px auto 0;
 }
 
+.u-section-3 .u-btn-1 {
+  background-image: none;
+  border-style: none none solid;
+  padding: 0;
+}
+
+.u-section-3 .u-btn-2 {
+  background-image: none;
+  border-style: none none solid;
+  padding: 0;
+}
+
 .u-section-3 .u-image-1 {
   min-height: 719px;
   background-image: url("images/pexelsphoto3874342.jpeg");
