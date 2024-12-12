@@ -412,6 +412,12 @@
   padding: 0;
 }
 
+.u-section-3 .u-btn-3 {
+  background-image: none;
+  border-style: none none solid;
+  padding: 0;
+}
+
 .u-section-3 .u-image-1 {
   min-height: 808px;
   background-image: url("images/pexelsphoto3874342.jpeg");
