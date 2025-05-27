@@ -10,7 +10,7 @@
 .u-section-1 .u-group-1 {
   width: 962px;
   min-height: 384px;
-  margin: 313px auto;
+  margin: 313px auto 60px;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -68,25 +68,6 @@
   padding: 0;
 }
 
-.u-section-1 .u-form-1 {
-  height: 79px;
-  margin: 4px 229px 0 256px;
-}
-
-.u-section-1 .u-input-1 {
-  background-image: none;
-}
-
-.u-section-1 .u-btn-4 {
-  font-family: Poppins-Regular;
-  letter-spacing: 1px;
-  border-style: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-image: none;
-  padding: 12px 31px 12px 29px;
-}
-
 @media (max-width: 1199px) {
   .u-section-1 .u-group-1 {
     width: 940px;
@@ -96,22 +77,11 @@
     animation-duration: 1000ms;
     --animation-custom_in-scale: 1;
   }
-
-  .u-section-1 .u-form-1 {
-    width: 478px;
-    margin-right: 218px;
-    margin-left: 245px;
-  }
 }
 
 @media (max-width: 991px) {
   .u-section-1 .u-group-1 {
     width: 720px;
-  }
-
-  .u-section-1 .u-form-1 {
-    margin-right: 108px;
-    margin-left: 135px;
   }
 }
 
@@ -123,12 +93,6 @@
 
   .u-section-1 .u-text-2 {
     width: 540px;
-  }
-
-  .u-section-1 .u-form-1 {
-    margin-top: 20px;
-    margin-right: 18px;
-    margin-left: 45px;
   }
 }
 
@@ -149,12 +113,6 @@
   .u-section-1 .u-text-3 {
     font-size: 0.75rem;
     width: 340px;
-  }
-
-  .u-section-1 .u-form-1 {
-    width: 340px;
-    margin-right: 0;
-    margin-left: 0;
   }
 } .u-section-2 {
   background-image: none;
@@ -1461,7 +1419,6 @@
   background-image: none;
   border-style: none;
   font-size: 1rem;
-  font-family: Poppins-Regular;
 }
 
 @media (max-width: 1199px) {
@@ -1471,6 +1428,10 @@
     --animation-custom_in-opacity: 0;
     --animation-custom_in-rotate: 0deg;
     --animation-custom_in-scale: 1;
+  }
+
+  .u-section-8 .u-btn-1 {
+    font-family: Poppins-Regular-28;
   }
 }
 
@@ -1507,6 +1468,9 @@
   }
 }.grecaptcha-badge { 
   visibility: hidden !important;
+}
+.hidden {
+  visibility: hidden !important;
 }@font-face {
   font-family: 'Poppins-SemiBold-30';
   font-style: normal;
@@ -1517,11 +1481,6 @@
   font-style: normal;
   font-weight: 400;
   src: url(fonts/Poppins-Light-31.ttf);
-}@font-face {
-  font-family: 'Poppins-Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/Poppins-Regular.ttf);
 }@font-face {
   font-family: 'Poppins-Regular-28';
   font-style: normal;
