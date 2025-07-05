@@ -50,7 +50,6 @@ window.addEventListener('DOMContentLoaded', () => {
       const data = await res.json()
       const link = document.getElementById('download-mobile-app')
       link.href = data.latestApkUrl
-      link.textContent = 'Download Latest APK'
     } catch (err) {
       console.error(err)
       document.getElementById('demo-mobile-app').style.display = 'none'

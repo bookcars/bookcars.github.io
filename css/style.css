@@ -118,6 +118,14 @@ nav ul {
   gap: 1.2rem;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
@@ -138,11 +146,34 @@ nav a:focus {
   text-decoration: none;
 }
 
+.github-link-content {
+  display: flex;
+  align-items: center;
+}
+
+.github-link-text{
+  margin-right: 5px;
+}
+
 .github-link svg {
   width: 16px;
   height: 16px;
   margin-left: 4px;
   vertical-align: middle;
+}
+
+.github-button-wrapper {
+  display: flex;
+  align-items: center;
+  transform-origin: center;
+  line-height: 1;
+  height: 100%;
+  margin-top: 5px;
+}
+
+.nav-github {
+  display: flex;
+  align-items: center;
 }
 
 .lang-switcher button,
