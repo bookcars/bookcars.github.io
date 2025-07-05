@@ -363,7 +363,6 @@ section h3 {
 /* Demo Section */
 #demo {
   background-color: var(--section-bg);
-  padding: 4rem 2rem;
 }
 
 #demo .container {

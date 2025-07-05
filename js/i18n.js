@@ -8,11 +8,21 @@ function applyTranslations(translations) {
     }
   })
 
+  // Support placeholder translations
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder')
+    const translation = translations[key]
+    if (translation) {
+      el.setAttribute('placeholder', translation)
+    }
+  })
+
   const defaultLang = 'en'
 
   // Get saved language from localStorage or fallback to default
   const lang = localStorage.getItem('lang') || defaultLang
 
+  // Build hrefs
   fetch(`./locales/${lang}.json`)
     .then(res => res.json())
     .then(translations => {

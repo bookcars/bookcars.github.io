@@ -174,32 +174,42 @@
       <h3 data-i18n="demo.title">Try the App</h3>
 
       <div class="demo-group">
-        <h4>Frontend</h4>
-        <p><strong>URL:</strong> <a href="https://bookcars.dynv6.net:3002/" target="_blank"
-            rel="noopener noreferrer">https://bookcars.dynv6.net:3002/</a></p>
-        <p><strong>Login:</strong> jdoe@bookcars.ma</p>
-        <p><strong>Password:</strong> B00kC4r5</p>
+        <h4 data-i18n="demo.frontend">Frontend</h4>
+        <p><strong data-i18n="demo.frontendUrl">URL:</strong>
+          <a href="https://bookcars.dynv6.net:3002/" target="_blank"
+            rel="noopener noreferrer">https://bookcars.dynv6.net:3002/</a>
+        </p>
+        <p><strong data-i18n="demo.frontendLogin">Login:</strong> jdoe@bookcars.ma</p>
+        <p><strong data-i18n="demo.frontendPassword">Password:</strong> B00kC4r5</p>
       </div>
 
       <div class="demo-group">
-        <h4>Admin Panel</h4>
-        <p><strong>URL:</strong> <a href="https://bookcars.dynv6.net:3001/" target="_blank"
-            rel="noopener noreferrer">https://bookcars.dynv6.net:3001/</a></p>
-        <p><strong>Login:</strong> admin@bookcars.ma</p>
-        <p><strong>Password:</strong> B00kC4r5</p>
+        <h4 data-i18n="demo.adminPanel">Admin Panel</h4>
+        <p><strong data-i18n="demo.adminUrl">URL:</strong>
+          <a href="https://bookcars.dynv6.net:3001/" target="_blank"
+            rel="noopener noreferrer">https://bookcars.dynv6.net:3001/</a>
+        </p>
+        <p><strong data-i18n="demo.adminLogin">Login:</strong> admin@bookcars.ma</p>
+        <p><strong data-i18n="demo.adminPassword">Password:</strong> B00kC4r5</p>
       </div>
 
       <div id="demo-mobile-app" class="demo-group">
-        <h4>Android App</h4>
-        <p>You can install the Android App by downloading the APK and installing it on any Android device.</p>
-        <p><a id="download-mobile-app" href="https://github.com/aelassas/bookcars/releases/latest/download/bookcars.apk"
-            rel="noopener noreferrer" class="btn">Download APK</a></p>
-        <p><strong>Login:</strong> jdoe@bookcars.ma</p>
-        <p><strong>Password:</strong> B00kC4r5</p>
+        <h4 data-i18n="demo.androidApp">Android App</h4>
+        <p data-i18n="demo.androidAppDesc">You can install the Android App by downloading the APK and installing it on
+          any Android device.</p>
+        <p>
+          <a id="download-mobile-app" href="https://github.com/aelassas/bookcars/releases/latest/download/bookcars.apk"
+            rel="noopener noreferrer" class="btn" data-i18n="demo.downloadApk">Download APK</a>
+        </p>
+        <p><strong data-i18n="demo.mobileLogin">Login:</strong> jdoe@bookcars.ma</p>
+        <p><strong data-i18n="demo.mobilePassword">Password:</strong> B00kC4r5</p>
       </div>
 
-      <p>For more info, visit the <a href="https://github.com/aelassas/bookcars#live-demo" target="_blank"
-          rel="noopener noreferrer">GitHub Live Demo section</a>.</p>
+      <p>
+        <span data-i18n="demo.moreInfo">For more info, visit the</span>
+        <a href="https://github.com/aelassas/bookcars#live-demo" target="_blank" rel="noopener noreferrer"
+          data-i18n="demo.githubLiveDemo">GitHub Live Demo section</a>.
+      </p>
     </div>
   </section>
 
@@ -253,9 +263,11 @@
     <div class="container">
       <h3 data-i18n="contact.title">Contact Us</h3>
       <form action="https://formspree.io/f/mqaklewj" method="POST">
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" required></textarea>
+        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder" required />
+        <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.emailPlaceholder"
+          required />
+        <textarea name="message" placeholder="Message" data-i18n-placeholder="contact.messagePlaceholder"
+          required></textarea>
         <button type="submit" data-i18n="contact.submit">Send</button>
       </form>
     </div>
