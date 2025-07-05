@@ -7,6 +7,8 @@
   "hero.title": "Une Plateforme Moderne de Location de Voitures",
   "hero.description": "Comprend un frontend web, une application mobile native pour Android et iOS, et un panneau d'administration puissant.",
   "hero.cta": "Démo en ligne",
+  "about.title": "Gratuit, Multiplateforme, Open Source",
+  "about.description": "BookCars est une plateforme de location de voitures open source sous licence MIT. Cela signifie que vous pouvez l'utiliser, la modifier, la partager ou même la vendre. Elle fonctionne parfaitement sur le web, Android et iOS.",
   "features.title": "Fonctionnalités",
   "features.supplier_title": "Gestion des fournisseurs et de la flotte",
   "features.supplier_management": "Gestion des fournisseurs",

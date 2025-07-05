@@ -149,7 +149,7 @@ nav a:focus {
   align-items: center;
 }
 
-.github-link-text{
+.github-link-text {
   margin-right: 5px;
 }
 
@@ -358,7 +358,38 @@ section h3 {
   text-align: center;
 }
 
+/* About Section */
+.about-section {
+  padding: 3rem 1.5rem;
+  background-color: var(--background-light);
+  color: var(--text);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+}
+
+.about-section h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding: 0 0.75rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+}
+
+
 /* Features Section */
+#features {
+  background-color: var(--background-light);
+}
+
 #features .container {
   display: grid;
   gap: 2rem;

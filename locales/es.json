@@ -7,6 +7,8 @@
   "hero.title": "Una Plataforma Moderna de Alquiler de Coches",
   "hero.description": "Incluye un frontend web, una aplicación móvil nativa para Android e iOS y un panel de administración potente.",
   "hero.cta": "Demostración en vivo",
+  "about.title": "Gratis, Multiplataforma, Código Abierto",
+  "about.description": "BookCars es una plataforma de alquiler de coches de código abierto bajo licencia MIT. Esto significa que puedes usarla, modificarla, compartirla o incluso venderla. Funciona sin problemas en web, Android y iOS.",
   "features.title": "Características",
   "features.supplier_title": "Gestión de proveedores y flotas",
   "features.supplier_management": "Gestión de proveedores",
