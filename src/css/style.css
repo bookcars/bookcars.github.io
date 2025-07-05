@@ -1,45 +1,47 @@
 :root {
-  --background: #ffffff;
+  --background: #fff;
+  --background-dark: #fafafa;
   --text: #212529;
   --primary: #212529;
   --primary-dark: hwb(210 13% 84%);
   --primary-hover: #343a40;
   --secondary: #007bff;
   --muted: #626262;
-  --section-bg: #f9f9f9;
   --lang-text-hover: #fff;
   --lang-text-active: #fff;
   --lang-text-hover-bg: #343a40;
-  --theme-btn-bg: #fff;
-  --theme-btn-text: #212529;
+  --btn-bg: #fff;
+  --btn-text: #212529;
   --btn-bg: #212529;
   --btn-text: #fff;
   --form-bg: #fafafa;
   --form-border: #e0e0e0;
   --footer-bg: #f5f5f5;
+  --border: #e2e2e2;
+  --lang-text: #212529;
   --border-radius: 8px;
   --max-width: 1200px;
 }
 
 [data-theme="dark"] {
-  --background: #121212;
+  --background: #222;
+  --background-dark: #121212;
   --text: #e0e0e0;
   --primary: #eee;
   --primary-dark: #eee;
-  --primary-hover: #121212;
+  --primary-hover: #212529;
   --secondary: #007bff;
   --muted: #929292;
-  --section-bg: #222;
   --lang-text-hover: #212529;
   --lang-text-hover-bg: #fff;
   --lang-text-active: #212529;
-  --theme-btn-bg: #212529;
-  --theme-btn-text: #fff;
-  --btn-bg: #343a40;
+  --btn-bg: #121212;
   --btn-text: #fff;
   --form-bg: #212529;
   --form-border: #121212;
   --footer-bg: #212529;
+  --border: #313131;
+  --lang-text: #212529;
 }
 
 * {
@@ -50,7 +52,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--background);
+  background-color: var(--background-dark);
   color: var(--text);
   line-height: 1.6;
 }
@@ -83,7 +85,6 @@ a:hover {
 
 header {
   background: var(--background);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   padding: 0.5rem 2rem;
   position: relative;
   top: 0;
@@ -121,6 +122,10 @@ nav ul {
   display: flex;
 }
 
+nav ul.nav-right {
+  gap: 0;
+}
+
 nav ul li {
   display: flex;
   align-items: center;
@@ -154,8 +159,8 @@ nav a:focus {
 }
 
 .github-link svg {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 4px;
   vertical-align: middle;
 }
@@ -174,42 +179,88 @@ nav a:focus {
   align-items: center;
 }
 
-.lang-switcher button,
-.theme-toggle-btn {
+.lang-switcher {
+  position: relative;
+}
+
+#lang-toggle {
   background: transparent;
-  border: 1.5px solid var(--primary-dark);
-  color: var(--primary-dark);
-  padding: 0.2rem 0.6rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  border-radius: 4px;
+  border: none;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  line-height: 1;
+  color: var(--primary-dark);
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
-.lang-switcher button:hover,
-.lang-switcher button:focus {
-  background-color: var(--lang-text-hover-bg);
-  color: var(--lang-text-hover);
-  outline: none;
+#lang-toggle :hover{
+  stroke: var(--secondary);
 }
 
-.lang-switcher button.active-lang {
-  background-color: var(--primary-dark);
-  color: var(--lang-text-active);
-  cursor: default;
+.lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.3rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.lang-menu[hidden] {
+  display: none !important;
+}
+
+.lang-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lang-menu button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  text-align: left;
+  width: 100%;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: var(--lang-text);
+  transition: background-color 0.2s ease;
+}
+
+.lang-menu button:hover {
+  background-color: var(--primary-light);
+  color: var(--lang-text);
 }
 
 .theme-toggle-btn {
-  background-color: var(--theme-btn-bg);
+  border: none;
+}
+
+.theme-toggle-btn:hover{
+  cursor: pointer;
+} 
+
+.theme-toggle-btn {
+  background-color: var(--background);
 }
 
 .theme-toggle-btn svg {
-  stroke: var(--theme-btn-text);
+  stroke: var(--text);
   width: 20px;
   height: 20px;
   transition: stroke 0.3s ease;
+}
+
+.theme-toggle-btn:hover svg {
+  stroke: var(--secondary);
 }
 
 .btn-hero {
@@ -234,7 +285,7 @@ nav a:focus {
 
   .hamburger {
     display: block;
-    width: 24px;
+    width: 20px;
     height: 24px;
     background: none;
     border: none;
@@ -304,6 +355,10 @@ nav a:focus {
     gap: 1rem;
   }
 
+  nav ul.nav-right {
+    flex-direction: row;
+  }
+
   .lang-switcher {
     order: 1;
     width: 100%;
@@ -317,8 +372,8 @@ nav a:focus {
 
 /* Hero Section */
 .hero {
-  background: var(--section-bg);
-  padding: 5rem 2rem;
+  background: var(--background);
+  padding: 8rem 2rem;
   text-align: center;
 }
 
@@ -361,7 +416,7 @@ section h3 {
 /* About Section */
 .about-section {
   padding: 3rem 1.5rem;
-  background-color: var(--background-light);
+  background-color: var(--background-dark);
   color: var(--text);
   text-align: center;
   max-width: 900px;
@@ -387,7 +442,7 @@ section h3 {
 
 /* Features Section */
 #features {
-  background-color: var(--background-light);
+  background-color: var(--background);
 }
 
 #features .container {
@@ -411,18 +466,18 @@ section h3 {
 }
 
 #features ul li {
-  background: var(--background);
+  background: var(--background-dark);
   padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   border-radius: var(--border-radius);
   font-size: 0.95rem;
   line-height: 1.4;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04); */
 }
 
 /* Demo Section */
 #demo {
-  background-color: var(--section-bg);
+  background-color: var(--background);
 }
 
 #demo .container {
@@ -437,12 +492,14 @@ section h3 {
 }
 
 .demo-group {
-  background: var(--background);
+  background: var(--background-dark);
   border-radius: var(--border-radius);
   padding: 1.5rem 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+  border: 1px solid var(--border);
   /* Fixed width so boxes stay side by side */
-  flex: 0 0 1;
+  flex: 1 1 200px;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -480,7 +537,7 @@ section h3 {
 
 /* Support Section */
 #support {
-  background-color: var(--section-bg);
+  background-color: var(--background-dark);
   padding: 4rem 2rem;
   color: var(--text);
 }
@@ -550,10 +607,14 @@ section h3 {
 }
 
 /* Contact Form */
+#contact {
+  background-color: var(--background);
+}
+
 form {
   display: grid;
   gap: 1rem;
-  max-width: 500px;
+  max-width: 600px;
   margin: 1rem auto 0 auto;
   padding: 1rem;
   background-color: var(--form-bg);
@@ -572,7 +633,7 @@ textarea {
 }
 
 textarea {
-  min-height: 120px;
+  min-height: 220px;
   resize: vertical;
 }
 

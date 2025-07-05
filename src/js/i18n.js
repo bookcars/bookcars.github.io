@@ -45,7 +45,7 @@ function applyTranslations(translations) {
     .catch(err => console.error(`Failed to load ${lang} translations`, err))
 }
 
-async function setLang(lang) {
+export async function setLang(lang) {
   try {
     localStorage.setItem('lang', lang)
     document.documentElement.lang = lang

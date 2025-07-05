@@ -1,8 +1,9 @@
-import '../css/style.css'
-import './i18n.js'
+import { setLang } from './i18n.js'
+
+window.setLang = setLang
 
 window.addEventListener('DOMContentLoaded', () => {
-  // humberger menu
+  // Hamburger menu
   const hamburger = document.querySelector('.hamburger')
   const nav = document.querySelector('nav')
 
@@ -13,7 +14,36 @@ window.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active')
   })
 
-  // light/dark theme
+  // Handle language
+  const langToggle = document.getElementById('lang-toggle')
+  const langMenu = document.getElementById('lang-menu')
+
+  langToggle.addEventListener('click', () => {
+    const expanded = langToggle.getAttribute('aria-expanded') === 'true'
+    langToggle.setAttribute('aria-expanded', !expanded)
+    langMenu.hidden = expanded
+  })
+
+  // Hide menu and change language on language item click
+  langMenu.querySelectorAll('button').forEach(item => {
+    item.addEventListener('click', () => {
+      const lang = item.getAttribute('data-lang')
+      setLang(lang)
+
+      langToggle.setAttribute('aria-expanded', false)
+      langMenu.hidden = true
+    })
+  })
+
+  // Close language menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!langToggle.contains(e.target) && !langMenu.contains(e.target)) {
+      langToggle.setAttribute('aria-expanded', 'false')
+      langMenu.hidden = true
+    }
+  })
+
+  // Light/Dark theme
   const themeToggleBtn = document.getElementById('theme-toggle')
   const iconSun = themeToggleBtn.querySelector('.icon-sun')
   const iconMoon = themeToggleBtn.querySelector('.icon-moon')
@@ -43,7 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // get latest mobile android app link
+  // Get latest mobile android app link
   async function updateDownloadLink() {
     try {
       const url = 'https://raw.githubusercontent.com/aelassas/bookcars/main/.github/latest-release.json'
