@@ -47,6 +47,7 @@ function applyTranslations(translations) {
 async function setLang(lang) {
   try {
     localStorage.setItem('lang', lang)
+    document.documentElement.lang = lang
     const res = await fetch(`locales/${lang}.json`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const translations = await res.json()
