@@ -1,4 +1,5 @@
 let currentLang = 'en'
+const base = import.meta.env.BASE_URL || '/'
 
 function applyTranslations(translations) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -23,7 +24,7 @@ function applyTranslations(translations) {
   const lang = localStorage.getItem('lang') || defaultLang
 
   // Build hrefs
-  fetch(`./locales/${lang}.json`)
+  fetch(`${base}locales/${lang}.json`)
     .then(res => res.json())
     .then(translations => {
       document.querySelectorAll('[data-i18n]').forEach(el => {
