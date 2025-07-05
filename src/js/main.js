@@ -1,3 +1,6 @@
+import '../css/style.css'
+import './i18n.js'
+
 window.addEventListener('DOMContentLoaded', () => {
   // humberger menu
   const hamburger = document.querySelector('.hamburger')
