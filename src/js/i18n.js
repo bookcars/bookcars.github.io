@@ -55,10 +55,12 @@ export async function setLang(lang) {
     applyTranslations(translations)
     currentLang = lang
 
-    // Highlight the selected button
-    document.querySelectorAll('.lang-switcher button').forEach(btn => {
-      const code = btn.textContent.trim().toLowerCase()
-      btn.classList.toggle('active-lang', code === lang.toLowerCase())
+    // Highlight the selected language
+    document.querySelectorAll('[data-lang]').forEach(btn => {
+      btn.removeAttribute('data-selected')
+      if (btn.getAttribute('data-lang') === lang) {
+        btn.setAttribute('data-selected', 'true')
+      }
     })
   } catch (err) {
     console.error(`Failed to load ${lang} translations:`, err)

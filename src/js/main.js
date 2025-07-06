@@ -14,6 +14,16 @@ window.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active')
   })
 
+  // Set header bottom border on scroll
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header')
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled')
+    } else {
+      header.classList.remove('scrolled')
+    }
+  })
+
   // Handle language
   const langToggle = document.getElementById('lang-toggle')
   const langMenu = document.getElementById('lang-menu')

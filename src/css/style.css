@@ -1,15 +1,17 @@
 :root {
   --background: #fff;
-  --background-dark: #fafafa;
+  --background-dark: #f9fafb;
   --text: #212529;
   --primary: #212529;
   --primary-dark: hwb(210 13% 84%);
-  --primary-hover: #343a40;
+  --primary-hover: #3A404A;
   --secondary: #007bff;
-  --muted: #626262;
-  --lang-text-hover: #fff;
-  --lang-text-active: #fff;
-  --lang-text-hover-bg: #343a40;
+  --muted: #6b7280;
+  --header-border: #eaeaea;
+  --lang-text-bg: #fff;
+  --lang-text: #212529;
+  --lang-text-hover: #eee;
+  --lang-border: #ddd;
   --btn-bg: #fff;
   --btn-text: #212529;
   --btn-bg: #212529;
@@ -17,31 +19,31 @@
   --form-bg: #fafafa;
   --form-border: #e0e0e0;
   --footer-bg: #f5f5f5;
-  --border: #e2e2e2;
-  --lang-text: #212529;
+  --border: #f2f2f2;
   --border-radius: 8px;
   --max-width: 1200px;
 }
 
 [data-theme="dark"] {
-  --background: #222;
-  --background-dark: #121212;
-  --text: #e0e0e0;
-  --primary: #eee;
-  --primary-dark: #eee;
-  --primary-hover: #212529;
-  --secondary: #007bff;
-  --muted: #929292;
-  --lang-text-hover: #212529;
-  --lang-text-hover-bg: #fff;
-  --lang-text-active: #212529;
+  --background: #23272F;
+  --background-dark: #1B1D24;
+  --text: #F6F7F9;
+  --primary: #F6F7F9;
+  --primary-dark: #F6F7F9;
+  --primary-hover: #3A404A;
+  --secondary: #56BFD7;
+  --muted: #9CA3AF;
+  --header-border: #2D3138;
+  --lang-text-bg: #23272F;
+  --lang-text: #F6F7F9;
+  --lang-text-hover: #3A404A;
+  --lang-border: #33372F;
   --btn-bg: #121212;
-  --btn-text: #fff;
-  --form-bg: #212529;
-  --form-border: #121212;
-  --footer-bg: #212529;
-  --border: #313131;
-  --lang-text: #212529;
+  --btn-text: #F6F7F9;
+  --form-bg: #1B1D24;
+  --form-border: #1B1D24;
+  --footer-bg: #1B1D24;
+  --border: #1B1D24;
 }
 
 * {
@@ -86,9 +88,13 @@ a:hover {
 header {
   background: var(--background);
   padding: 0.5rem 2rem;
-  position: relative;
+  position: sticky;
   top: 0;
   z-index: 100;
+}
+
+header.scrolled {
+  border-bottom: 1px solid var(--header-border);
 }
 
 h1 {
@@ -193,7 +199,7 @@ nav a:focus {
   margin-top: 5px;
 }
 
-#lang-toggle :hover{
+#lang-toggle :hover {
   stroke: var(--secondary);
 }
 
@@ -203,10 +209,8 @@ nav a:focus {
   right: 0;
   margin-top: 0.5rem;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid var(--lang-border);
   border-radius: 4px;
-  padding: 0.3rem 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -224,7 +228,7 @@ nav a:focus {
 }
 
 .lang-menu button {
-  background: none;
+  background: var(--lang-text-bg);
   border: none;
   padding: 0.5rem 1rem;
   text-align: left;
@@ -236,17 +240,24 @@ nav a:focus {
 }
 
 .lang-menu button:hover {
-  background-color: var(--primary-light);
-  color: var(--lang-text);
+  background-color: var(--lang-text-hover);
+}
+
+[data-lang][data-selected="true"],
+[data-lang][data-selected="true"]:hover {
+  background-color: var(--secondary);
+  color: #fff;
+  font-weight: bold;
+  border-color: var(--primary-dark);
 }
 
 .theme-toggle-btn {
   border: none;
 }
 
-.theme-toggle-btn:hover{
+.theme-toggle-btn:hover {
   cursor: pointer;
-} 
+}
 
 .theme-toggle-btn {
   background-color: var(--background);
