@@ -8,14 +8,29 @@
     content="car rental software, rental car software, car rental platform, rental car platform, booking car software, car booking software, free car rental software, free rental car software, free car rental platform, free rental car platform, free car rental system, free rental car system, free car rental aggregator, free rental car aggregator, open source car rental software, car rental software open source, car rental github, github car rental, github car rental website, car rental system github, github car rental system">
   <meta name="description"
     content="BookCars is a highly customizable, scalable, and cost-efficient solution for car rental businesses. Its robust feature set and open-source nature make it a sustainable choice for long-term growth in the rental industry.">
-  <title>BookCars - Open Source Car Rental Platform</title>
   <meta property="og:title" content="BookCars - Open Source Car Rental Platform">
   <meta property="og:description"
     content="BookCars is a highly customizable, scalable, and cost-efficient solution for car rental businesses. Its robust feature set and open-source nature make it a sustainable choice for long-term growth in the rental industry.">
   <meta property="og:url" content="https://bookcars.github.io">
-  <link rel="canonical" href="https://bookcars.github.io">
+  <title>BookCars - Open Source Car Rental Platform</title>
+  <link rel="alternate" hreflang="en" href="https://bookcars.github.io/?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://bookcars.github.io/?lang=fr" />
+  <link rel="alternate" hreflang="es" href="https://bookcars.github.io/?lang=es" />
+  <link rel="alternate" hreflang="pt" href="https://bookcars.github.io/?lang=pt" />
+  <link rel="alternate" hreflang="ja" href="https://bookcars.github.io/?lang=ja" />
+  <link rel="alternate" hreflang="zh" href="https://bookcars.github.io/?lang=zh" />
+  <link rel="alternate" hreflang="x-default" href="https://bookcars.github.io/" />
+  <link rel="canonical" href="https://bookcars.github.io/" />
   <link rel="icon" href="/favicon.png">
-  <!-- Google Analytics -->
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <style>
+    html[data-loading] body {
+      visibility: hidden;
+    }
+  </style>
+  <script>
+    document.documentElement.setAttribute('data-loading', '')
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZK7H4870R"></script>
   <script>
     window.dataLayer = window.dataLayer || []
@@ -23,8 +38,6 @@
     gtag('js', new Date())
     gtag('config', 'G-LZK7H4870R')
   </script>
-  <!-- End Google Analytics -->
-  <link rel="stylesheet" href="/src/css/style.css" />
 </head>
 
 <body>
@@ -69,6 +82,9 @@
                 <li><button data-lang="en">English</button></li>
                 <li><button data-lang="fr">Français</button></li>
                 <li><button data-lang="es">Español</button></li>
+                <li><button data-lang="pt">Português</button></li>
+                <li><button data-lang="zh">中文</button></li>
+                <li><button data-lang="ja">日本語</button></li>
               </ul>
             </div>
           </li>
@@ -297,8 +313,8 @@
     <div class="container">
       <h3 data-i18n="contact.title">Contact Us</h3>
       <form action="https://formspree.io/f/mqaklewj" method="POST">
-        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder" autocomplete="name"
-          required />
+        <input type="text" name="name" placeholder="Name" data-i18n-placeholder="contact.namePlaceholder"
+          autocomplete="name" required />
         <input type="email" name="email" placeholder="Email" data-i18n-placeholder="contact.emailPlaceholder"
           autocomplete="email" required />
         <textarea name="message" placeholder="Message" data-i18n-placeholder="contact.messagePlaceholder"

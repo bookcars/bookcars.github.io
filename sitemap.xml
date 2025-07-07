@@ -3,4 +3,22 @@
   <url>
     <loc>https://bookcars.github.io</loc>
   </url>
+  <url>
+    <loc>https://bookcars.github.io/?lang=en</loc>
+  </url>
+  <url>
+    <loc>https://bookcars.github.io/?lang=fr</loc>
+  </url>
+  <url>
+    <loc>https://bookcars.github.io/?lang=es</loc>
+  </url>
+  <url>
+    <loc>https://bookcars.github.io/?lang=pt</loc>
+  </url>
+  <url>
+    <loc>https://bookcars.github.io/?lang=zh</loc>
+  </url>
+  <url>
+    <loc>https://bookcars.github.io/?lang=ja</loc>
+  </url>
 </urlset>

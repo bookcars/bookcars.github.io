@@ -2,7 +2,39 @@ import { setLang } from './i18n.js'
 
 window.setLang = setLang
 
+async function loadTranslation() {
+  const params = new URLSearchParams(window.location.search)
+  const lang = params.get('lang') || localStorage.getItem('lang') || 'en'
+
+  try {
+    const res = await fetch(`locales/${lang}.json`)
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+
+    const translations = await res.json()
+    document.documentElement.lang = lang
+    document.title = translations['website.title'] || 'BookCars'
+    window.translations = translations
+    window.currentLang = lang
+    localStorage.setItem('lang', lang)
+  } catch (err) {
+    console.error(`Failed to load translations for ${lang}:`, err)
+    window.translations = {} // fallback to prevent crash
+  } finally {
+    document.documentElement.removeAttribute('data-loading')
+  }
+}
+
+loadTranslation()
+
 window.addEventListener('DOMContentLoaded', () => {
+  // apply translations
+  if (window.translations) {
+    applyTranslations(window.translations)
+  } else {
+    // fallback
+    setLang('en')
+  }
+
   // Hamburger menu
   const hamburger = document.querySelector('.hamburger')
   const nav = document.querySelector('nav')

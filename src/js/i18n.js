@@ -54,6 +54,7 @@ export async function setLang(lang) {
     const translations = await res.json()
     applyTranslations(translations)
     currentLang = lang
+    document.title = translations['website.title']
 
     // Highlight the selected language
     document.querySelectorAll('[data-lang]').forEach(btn => {
