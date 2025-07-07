@@ -1,5 +1,8 @@
-let currentLang = 'en'
+window.currentLang = 'en'
+
 const base = import.meta.env.BASE_URL || '/'
+
+export const supportedLangs = ['en', 'fr', 'es', 'pt', 'zh', 'ja']
 
 export function applyTranslations(translations) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -49,15 +52,23 @@ export async function setLang(lang) {
   try {
     localStorage.setItem('lang', lang)
     document.documentElement.lang = lang
+
     const res = await fetch(`locales/${lang}.json`)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const translations = await res.json()
-    applyTranslations(translations)
-    currentLang = lang
-    document.title = translations['website.title']
 
-    // Highlight the selected language
-    document.querySelectorAll('[data-lang]').forEach(btn => {
+    applyTranslations(translations)
+    window.currentLang = lang
+    document.title = translations['website.title'] || document.title
+
+    // Update URL without reloading
+    const url = new URL(window.location)
+    url.searchParams.set('lang', lang)
+    window.history.replaceState({}, '', url)
+
+    // Highlight selected language button
+    const buttons = document.querySelectorAll('[data-lang]')
+    buttons.forEach(btn => {
       btn.removeAttribute('data-selected')
       if (btn.getAttribute('data-lang') === lang) {
         btn.setAttribute('data-selected', 'true')
@@ -73,7 +84,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const urlLang = params.get('lang')
   const storedLang = localStorage.getItem('lang')
 
-  const supportedLangs = ['en', 'fr', 'es']
   const lang = supportedLangs.includes(urlLang) ? urlLang
     : supportedLangs.includes(storedLang) ? storedLang
       : 'en'

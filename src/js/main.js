@@ -1,15 +1,15 @@
-import { setLang, applyTranslations } from './i18n.js'
+import { supportedLangs, setLang, applyTranslations } from './i18n.js'
 
 window.setLang = setLang
 
 document.documentElement.setAttribute('data-loading', '')
 
+  // Detect language, load translation file asynchronously, update page language and title, then apply translations
   ; (async function () {
     const params = new URLSearchParams(window.location.search)
     const urlLang = params.get('lang')
     const storedLang = localStorage.getItem('lang')
 
-    const supportedLangs = ['en', 'fr', 'es', 'pt', 'zh', 'ja', 'de']
     const lang = supportedLangs.includes(urlLang)
       ? urlLang
       : supportedLangs.includes(storedLang)
@@ -27,9 +27,7 @@ document.documentElement.setAttribute('data-loading', '')
       window.currentLang = lang
       localStorage.setItem('lang', lang)
 
-      // Apply translations
       applyTranslations(translations)
-      console.log('Apply translations')
     } catch (err) {
       console.error(`Failed to load translations for ${lang}:`, err)
     } finally {
@@ -37,6 +35,7 @@ document.documentElement.setAttribute('data-loading', '')
     }
   })()
 
+// DOMContentLoaded
 window.addEventListener('DOMContentLoaded', () => {
   // Hamburger menu
   const hamburger = document.querySelector('.hamburger')
@@ -93,6 +92,18 @@ window.addEventListener('DOMContentLoaded', () => {
   const iconSun = themeToggleBtn.querySelector('.icon-sun')
   const iconMoon = themeToggleBtn.querySelector('.icon-moon')
 
+  function updateToggleIcon(theme) {
+    if (theme === 'dark') {
+      iconSun.style.display = 'block'
+      iconMoon.style.display = 'none'
+      themeToggleBtn.setAttribute('aria-pressed', 'true')
+    } else {
+      iconSun.style.display = 'none'
+      iconMoon.style.display = 'block'
+      themeToggleBtn.setAttribute('aria-pressed', 'false')
+    }
+  }
+
   // Load saved theme or default to light
   const savedTheme = localStorage.getItem('theme') || 'light'
   document.documentElement.setAttribute('data-theme', savedTheme)
@@ -105,18 +116,6 @@ window.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme)
     updateToggleIcon(newTheme)
   })
-
-  function updateToggleIcon(theme) {
-    if (theme === 'dark') {
-      iconSun.style.display = 'block'
-      iconMoon.style.display = 'none'
-      themeToggleBtn.setAttribute('aria-pressed', 'true')
-    } else {
-      iconSun.style.display = 'none'
-      iconMoon.style.display = 'block'
-      themeToggleBtn.setAttribute('aria-pressed', 'false')
-    }
-  }
 
   // Get latest mobile android app link
   async function updateDownloadLink() {
