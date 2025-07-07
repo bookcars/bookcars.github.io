@@ -1,7 +1,7 @@
 let currentLang = 'en'
 const base = import.meta.env.BASE_URL || '/'
 
-function applyTranslations(translations) {
+export function applyTranslations(translations) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n')
     if (translations[key]) {
