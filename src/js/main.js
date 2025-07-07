@@ -22,7 +22,7 @@ document.documentElement.setAttribute('data-loading', '')
 
       const translations = await res.json()
       document.documentElement.lang = lang
-      document.title = translations['website.title'] || 'BookCars'
+      document.title = translations['website.title']
       window.translations = translations
       window.currentLang = lang
       localStorage.setItem('lang', lang)
