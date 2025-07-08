@@ -1,1 +1,0 @@
-import{l as e,i,a as n,b as r,s as t,c as o,u as s}from"./ui-Ct-G0qPb.js";window.addEventListener("DOMContentLoaded",async()=>{try{await e(),i(),n(),r(t),o(),s()}catch(a){console.error("Error during app initialization:",a)}});
