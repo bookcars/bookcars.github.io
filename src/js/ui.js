@@ -116,7 +116,7 @@ export function initThemeToggle() {
  * Updates the download link for the mobile Android app with the latest APK URL.
  * If the fetch fails, hides the demo mobile app section.
  */
-export async function updateDownloadLink() {
+async function updateDownloadLink() {
   try {
     const link = document.getElementById('download-mobile-app')
     if (!link) return
@@ -131,6 +131,19 @@ export async function updateDownloadLink() {
     console.error(err)
     const demoMobileApp = document.getElementById('demo-mobile-app')
     if (demoMobileApp) demoMobileApp.style.display = 'none'
+  }
+}
+
+/**
+ * Initializes updating the mobile app download link.
+ * Uses `requestIdleCallback` to defer the update until the browser is idle,
+ * with a fallback to `setTimeout` if `requestIdleCallback` is not supported.
+ */
+export function initDownloadLink() {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(updateDownloadLink)
+  } else {
+    setTimeout(updateDownloadLink, 100) // fallback
   }
 }
 
