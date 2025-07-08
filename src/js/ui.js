@@ -118,15 +118,15 @@ export function initThemeToggle() {
  */
 export async function updateDownloadLink() {
   try {
+    const link = document.getElementById('download-mobile-app')
+    if (!link) return
     const url = 'https://raw.githubusercontent.com/aelassas/bookcars/main/.github/latest-release.json'
     const cacheBustedUrl = `${url}?t=${Date.now()}`
     const res = await fetch(cacheBustedUrl)
-    if (!res.ok) throw new Error('Failed to fetch latest release info')
+    if (!res.ok) throw new Error(`Failed to fetch latest release info: ${res.status} ${res.statusText}`)
     const data = await res.json()
-    const link = document.getElementById('download-mobile-app')
-    if (link && data.latestApkUrl) {
-      link.href = data.latestApkUrl
-    }
+    if (link.href === data.latestApkUrl) return
+    if (data.latestApkUrl) link.href = data.latestApkUrl
   } catch (err) {
     console.error(err)
     const demoMobileApp = document.getElementById('demo-mobile-app')
