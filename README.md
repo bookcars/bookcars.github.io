@@ -1,20 +1,20 @@
 [![deploy](https://github.com/bookcars/bookcars.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/bookcars/bookcars.github.io/actions/workflows/deploy.yml) [![lighthouse](https://github.com/bookcars/bookcars.github.io/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/bookcars/bookcars.github.io/actions/workflows/lighthouse.yml)
 
-# BookCars Website
+## About
+
+[BookCars](https://github.com/aelassas/bookcars) is a modern car rental platform offering a web frontend, native mobile apps (Android and iOS), and an admin panel.  
 
 This repository contains the source code for the [BookCars](https://bookcars.github.io/) official landing page.
 
+Built with a clean and simple design, this website presents the main features, demo, support, and contact sections to introduce BookCars to users and developers.
+
 The website is built using [Vite](https://vitejs.dev/) with plain HTML, CSS, and JavaScript.
 
-## About
+Feel free to explore the code, see how everything works, suggest improvements, or use it as a starting point or template to build your own landing page.
 
-BookCars is a modern car rental platform offering a web frontend, native mobile apps (Android and iOS), and an admin panel.  
+## Website Features (Not BookCars Platform)
 
-This website presents the main features, demo, support, and contact sections to introduce BookCars to users and developers.
-
-## Features
-
-- Multilingual support (English, French, Spanish, Portuguese, Japanese, Chinese)
+- Multilingual support (English, French, German, Spanish, Portuguese, Japanese, Chinese)
 - Responsive and accessible design  
 - Language switcher and dark mode toggle  
 - Demo links and contact form integration  
@@ -29,6 +29,7 @@ Each file/module has a single responsibility, helping keep the codebase clean an
 | `index.html`         | Structure / Content                                           | Defines the HTML structure and semantic layout of the page.                |
 | `style.css`          | Presentation (Styling)                                        | Handles layout, colors, fonts, and responsive design using CSS.            |
 | `i18n.js`            | Internationalization (i18n)                                   | Manages language loading, switching, and translation key resolution.       |
+| `ga.js`              | Google Analytics                                              | Loads Google Analytics script on `mousemove` or `touchstart` to enhance performance by deferring third-party tracking until user interaction. |
 | `ui.js`              | UI Behavior / Interactivity                                   | Manages dynamic UI features like header/footer loading, scroll effects, hamburger menu, theme toggle, etc. |
 | `main.js`            | Application Initialization / Coordination                     | Initializes the app, connects modules together, and runs on DOM ready.     |
 | `vite.config.js`     | Build Tool Configuration                                      | Configures how files are served and built using Vite.                      |
