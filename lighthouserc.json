@@ -11,8 +11,7 @@
       }
     },
     "upload": {
-      "target": "github",
-      "githubToken": "${GITHUB_TOKEN}"
+      "target": "temporary-public-storage"
     }
   }
 }
