@@ -1,3 +1,5 @@
+[![deploy](https://github.com/bookcars/bookcars.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/bookcars/bookcars.github.io/actions/workflows/deploy.yml) [![lighthouse](https://github.com/bookcars/bookcars.github.io/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/bookcars/bookcars.github.io/actions/workflows/lighthouse.yml)
+
 # BookCars Website
 
 This repository contains the source code for the [BookCars](https://bookcars.github.io/) official landing page.
