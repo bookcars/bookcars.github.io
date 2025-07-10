@@ -2,7 +2,7 @@
 
 ## About
 
-[BookCars](https://github.com/aelassas/bookcars) is a modern car rental platform offering a web frontend, native mobile apps (Android and iOS), and an admin panel.  
+[BookCars](https://github.com/aelassas/bookcars) is a car rental platform offering a web frontend, native mobile apps (Android and iOS), and a powerful admin panel.  
 
 This repository contains the source code for the [BookCars](https://bookcars.github.io/) official landing page — a presentation site for the platform, not the platform itself.
 
