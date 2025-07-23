@@ -23,7 +23,7 @@
   "features.vehicle_scheduler": "車両スケジューラー",
   "features.auto_notifications": "自動通知システム",
   "features.pricing_title": "価格設定＆支払い",
-  "features.dynamic_pricing": "動的価格計算",
+  "features.dynamic_pricing": "動的価格計算：時間単位、日単位、週単位、隔週、月単位の料金",
   "features.date_based_rates": "日時ベースの料金設定",
   "features.price_change_rate": "価格変動率",
   "features.payment_management": "支払い管理",

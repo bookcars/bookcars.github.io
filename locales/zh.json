@@ -23,7 +23,7 @@
   "features.vehicle_scheduler": "车辆调度",
   "features.auto_notifications": "自动通知系统",
   "features.pricing_title": "定价与支付",
-  "features.dynamic_pricing": "动态价格计算",
+  "features.dynamic_pricing": "动态价格计算：按小时、天、周、两周和月计费",
   "features.date_based_rates": "基于日期的价格",
   "features.price_change_rate": "价格变动率",
   "features.payment_management": "支付管理",
