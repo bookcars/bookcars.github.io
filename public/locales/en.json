@@ -27,7 +27,7 @@
   "features.date_based_rates": "Date-based price rates",
   "features.price_change_rate": "Price change rate",
   "features.payment_management": "Payment management",
-  "features.payment_gateways": "Multiple payment gateways supported (Stripe, PayPal)",
+  "features.payment_gateways": "Multiple payment gateways supported: Stripe, PayPal",
   "features.payment_methods": "Multiple payment methods: Credit Card, PayPal, Google Pay, Apple Pay, Link, Pay at the counter, Pay in full, Pay deposit",
   "features.locations_title": "Locations & Search",
   "features.hierarchical_locations": "Hierarchical locations with country, map, and parking integration",

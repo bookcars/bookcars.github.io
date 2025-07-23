@@ -27,7 +27,7 @@
   "features.date_based_rates": "日時ベースの料金設定",
   "features.price_change_rate": "価格変動率",
   "features.payment_management": "支払い管理",
-  "features.payment_gateways": "複数の支払いゲートウェイに対応（Stripe、PayPal）",
+  "features.payment_gateways": "複数の決済ゲートウェイに対応：Stripe、PayPal",
   "features.payment_methods": "複数の支払い方法：クレジットカード、PayPal、Google Pay、Apple Pay、Link、店頭支払い、一括払い、デポジット払い",
   "features.locations_title": "ロケーション＆検索",
   "features.hierarchical_locations": "国、地図、駐車場統合を含む階層的ロケーション",
