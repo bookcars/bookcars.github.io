@@ -23,7 +23,7 @@
   "features.vehicle_scheduler": "Planificateur de véhicules",
   "features.auto_notifications": "Système de notifications automatique",
   "features.pricing_title": "Tarification et paiements",
-  "features.dynamic_pricing": "Calcul dynamique des prix",
+  "features.dynamic_pricing": "Calcul dynamique des prix : tarifs horaires, journaliers, hebdomadaires, bi-hebdomadaires et mensuels",
   "features.date_based_rates": "Tarifs basés sur les dates",
   "features.price_change_rate": "Taux de variation des prix",
   "features.payment_management": "Gestion des paiements",
