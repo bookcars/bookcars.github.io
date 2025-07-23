@@ -27,7 +27,7 @@
   "features.date_based_rates": "Datumsbasierte Preissätze",
   "features.price_change_rate": "Preisänderungsrate",
   "features.payment_management": "Zahlungsverwaltung",
-  "features.payment_gateways": "Mehrere Zahlungsanbieter unterstützt (Stripe, PayPal)",
+  "features.payment_gateways": "Mehrere Zahlungsanbieter unterstützt: Stripe, PayPal",
   "features.payment_methods": "Mehrere Zahlungsmethoden: Kreditkarte, PayPal, Google Pay, Apple Pay, Link, Zahlung vor Ort, Komplettzahlung, Anzahlung",
   "features.locations_title": "Standorte & Suche",
   "features.hierarchical_locations": "Hierarchische Standorte mit Länder-, Karten- und Parkplatzintegration",

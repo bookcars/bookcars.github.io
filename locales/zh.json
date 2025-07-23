@@ -27,7 +27,7 @@
   "features.date_based_rates": "基于日期的价格",
   "features.price_change_rate": "价格变动率",
   "features.payment_management": "支付管理",
-  "features.payment_gateways": "支持多种支付网关（Stripe，PayPal）",
+  "features.payment_gateways": "支持多种支付网关：Stripe、PayPal",
   "features.payment_methods": "多种支付方式：信用卡、PayPal、Google Pay、Apple Pay、Link、柜台支付、全额支付、预付押金",
   "features.locations_title": "地点与搜索",
   "features.hierarchical_locations": "分层地点，含国家、地图和停车场集成",

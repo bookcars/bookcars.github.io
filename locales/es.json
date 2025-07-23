@@ -27,7 +27,7 @@
   "features.date_based_rates": "Tarifas basadas en fechas",
   "features.price_change_rate": "Tasa de cambio de precio",
   "features.payment_management": "Gestión de pagos",
-  "features.payment_gateways": "Pasarelas de pago compatibles (Stripe, PayPal)",
+  "features.payment_gateways": "Múltiples pasarelas de pago compatibles: Stripe, PayPal",
   "features.payment_methods": "Métodos de pago: Tarjeta de crédito, PayPal, Google Pay, Apple Pay, Link, Pago en mostrador, Pago completo, Depósito",
   "features.locations_title": "Ubicaciones y búsqueda",
   "features.hierarchical_locations": "Ubicaciones jerárquicas con país, mapa e integración de aparcamientos",
