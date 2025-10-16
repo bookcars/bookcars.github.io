@@ -27,7 +27,7 @@
   "features.date_based_rates": "Tarifs basés sur les dates",
   "features.price_change_rate": "Taux de variation des prix",
   "features.payment_management": "Gestion des paiements",
-"features.payment_gateways": "Passerelles de paiement prises en charge : Stripe, PayPal",
+  "features.payment_gateways": "Passerelles de paiement prises en charge : Stripe, PayPal",
   "features.payment_methods": "Méthodes de paiement multiples : Carte bancaire, PayPal, Google Pay, Apple Pay, Link, Paiement au comptoir, Paiement complet, Acompte",
   "features.locations_title": "Localisations et recherche",
   "features.hierarchical_locations": "Localisations hiérarchiques avec pays, carte et intégration des parkings",
@@ -77,5 +77,6 @@
   "contact.emailPlaceholder": "Email",
   "contact.messagePlaceholder": "Message",
   "contact.submit": "Envoyer",
+  "footer.by": "par",
   "footer.copyright": "Tous droits réservés."
 }
