@@ -68,7 +68,7 @@
   "support.donation1": "GitHub Sponsors (único o mensual)",
   "support.donation2": "PayPal",
   "support.donation3": "Buy Me a Coffee",
-  "support.closing": "El software de código abierto requiere tiempo, esfuerzo y recursos para mantenerse — tu apoyo ayuda a mantener este proyecto vivo, actualizado y accesible para todos. Cada contribución, grande o pequeña, marca la diferencia y motiva el trabajo continuo en funciones, corrección de errores y nuevas ideas.",
+  "support.closing": "El software de código abierto requiere tiempo, esfuerzo y recursos para mantenerse. Tu apoyo ayuda a mantener este proyecto vivo, actualizado y accesible para todos. Cada contribución, grande o pequeña, marca la diferencia y motiva el trabajo continuo en funciones, corrección de errores y nuevas ideas.",
   "githubIssues.title": "Reportar errores y solicitar funciones",
   "githubIssues.description": "¿Encontraste un error o quieres una nueva función? Ayuda a mejorar el proyecto <a href=\"https://github.com/aelassas/bookcars/issues\" target=\"_blank\" rel=\"noopener noreferrer\">abriendo un issue en GitHub</a>.",
   "githubIssues.linkText": "abriendo un issue en GitHub",
