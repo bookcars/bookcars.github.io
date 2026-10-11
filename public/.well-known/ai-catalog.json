@@ -28,9 +28,9 @@
       ]
     },
     {
-      "identifier": "urn:air:bookcars.github.io:docs:llms-full-txt",
+      "identifier": "urn:air:bookcars.github.io:docs:llms-full-txt-context",
       "displayName": "BookCars Full Documentation Context",
-      "type": "text/markdown",
+      "type": "application/ai-registry+json",
       "url": "https://bookcars.github.io/llms-full.txt",
       "description": "Complete concatenated Markdown documentation context compiled from all BookCars Wiki pages.",
       "representativeQueries": [
