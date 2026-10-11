@@ -1,0 +1,57 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:bookcars.github.io:docs:llms-txt",
+      "displayName": "BookCars Overview & Quick Reference for LLMs",
+      "type": "application/ai-registry+json",
+      "url": "https://bookcars.github.io/llms.txt",
+      "description": "Structured Markdown summary of BookCars, containing core feature overviews, technology stack breakdowns, and index links to documentation sections.",
+      "representativeQueries": [
+        "what is BookCars and what does it do",
+        "open source car rental platform with React Node.js and React Native",
+        "car rental management system with single and multi supplier support",
+        "BookCars architecture overview and core component setup"
+      ]
+    },
+    {
+      "identifier": "urn:air:bookcars.github.io:docs:llms-full-txt",
+      "displayName": "BookCars Complete Full-Text Documentation for LLMs",
+      "type": "application/ai-registry+json",
+      "url": "https://bookcars.github.io/llms-full.txt",
+      "description": "Complete concatenated Markdown documentation suite for BookCars, including price calculation algorithms, payment gateway integrations, Docker deployments, and Expo mobile setup.",
+      "representativeQueries": [
+        "full BookCars price calculation algorithm and rate rules documentation",
+        "how to configure Stripe and PayPal payment gateways in BookCars",
+        "BookCars rental date time constraints and vehicle availability logic",
+        "building and deploying BookCars React Native mobile app with Expo"
+      ]
+    },
+    {
+      "identifier": "urn:air:bookcars.github.io:docs:llms-full-txt",
+      "displayName": "BookCars Full Documentation Context",
+      "type": "text/markdown",
+      "url": "https://bookcars.github.io/llms-full.txt",
+      "description": "Complete concatenated Markdown documentation context compiled from all BookCars Wiki pages.",
+      "representativeQueries": [
+        "full BookCars backend REST API and frontend setup guides",
+        "how to setup social login for Google Facebook and Apple in BookCars",
+        "configuring date based pricing and tiered rental discounts in BookCars",
+        "BookCars Docker deployment Nginx reverse proxy and SSL setup"
+      ]
+    },
+    {
+      "identifier": "urn:air:bookcars.github.io:docs:wiki",
+      "displayName": "BookCars Official Wiki Documentation",
+      "type": "application/ai-registry+json",
+      "url": "https://github.com/aelassas/bookcars/wiki",
+      "description": "Comprehensive wiki covering self-hosted installation, Docker setup, software architecture, payment configuration, social login guides, mobile app builds, and testing references.",
+      "representativeQueries": [
+        "how to install BookCars on Docker or self-hosted Linux server",
+        "configure single supplier or multi supplier marketplace mode in BookCars",
+        "setup push notifications and email templates in BookCars",
+        "how to run integration tests and code coverage in BookCars"
+      ]
+    }
+  ]
+}
