@@ -1,11 +1,11 @@
 {
-  "website.title": "BookCars - Open Source Car Rental Platform",
+  "website.title": "BookCars - Open-Source Car Rental Platform",
   "title": "BookCars",
   "nav.features": "Features",
   "nav.demo": "Demo",
   "nav.support": "Support",
   "nav.contact": "Contact",
-  "hero.title": "A Modern Car Rental Platform",
+  "hero.title": "Open-Source Car Rental Platform",
   "hero.description": "Includes a web frontend, a native mobile app for Android and iOS, and a powerful admin panel.",
   "hero.cta": "Live Demo",
   "about.title": "Free, Cross-Platform, Open Source",
