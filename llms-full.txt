@@ -1,7 +1,7 @@
 # BookCars - Full Documentation Context
 
 > Auto-generated full documentation context compiled from the BookCars Wiki.
-> Generated on: 2026-11-04T21:08:30Z
+> Generated on: 2026-11-04T21:19:01Z
 
 ---
 
