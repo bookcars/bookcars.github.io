@@ -10,7 +10,7 @@
   "hero.cta": "Live Demo",
   "hero.get_started": "Get Started",
   "about.title": "Free, Cross-Platform, Open-Source",
-  "about.description": "BookCars is an open-source car rental platform licensed under MIT. This means you're free to use, modify, share, or even sell it. It works smoothly on web, Android, and iOS devices.",
+  "about.description": "BookCars is a free, open-source car rental platform licensed under MIT, so you are free to use, modify, share, or even sell it. It supports both single-supplier and multi-supplier setups, with Stripe and PayPal payment gateways built in. Flexible pricing lets each car have hourly, daily, weekly, bi-weekly, and monthly rates, discounted prices, date-based rates, and a supplier price change rate, all combined in a dynamic price calculation. The platform is available in 8 languages (English, French, Spanish, German, Portuguese, Italian, Chinese, and Japanese) and supports 134 currencies. It is protected against common web attacks (XSS, CSRF, MITM, and DDoS), includes error monitoring with Sentry, and deploys easily with Docker. It runs smoothly on web, Android, and iOS.",
   "features.title": "Features",
   "features.supplier_title": "Supplier & Fleet Management",
   "features.supplier_management": "Supplier management",

@@ -10,7 +10,7 @@
   "hero.cta": "Demo dal vivo",
   "hero.get_started": "Inizia ora",
   "about.title": "Gratuita, multipiattaforma, open source",
-  "about.description": "BookCars è una piattaforma open source per il noleggio auto con licenza MIT. Questo significa che sei libero di usarla, modificarla, condividerla o persino venderla. Funziona perfettamente su web, Android e iOS.",
+  "about.description": "BookCars è una piattaforma di noleggio auto gratuita e open source con licenza MIT, quindi sei libero di usarla, modificarla, condividerla o persino venderla. Supporta sia la modalità con un singolo fornitore sia quella con più fornitori, con i gateway di pagamento Stripe e PayPal integrati. La tariffazione flessibile consente a ogni auto di avere tariffe orarie, giornaliere, settimanali, bisettimanali e mensili, prezzi scontati, tariffe basate sulle date e un tasso di variazione del prezzo per fornitore, il tutto combinato in un calcolo dinamico del prezzo. La piattaforma è disponibile in 8 lingue (inglese, francese, spagnolo, tedesco, portoghese, italiano, cinese e giapponese) e supporta 134 valute. È protetta dai più comuni attacchi web (XSS, CSRF, MITM e DDoS), include il monitoraggio degli errori con Sentry e si distribuisce facilmente con Docker. Funziona perfettamente su web, Android e iOS.",
   "features.title": "Funzionalità",
   "features.supplier_title": "Gestione fornitori e flotta",
   "features.supplier_management": "Gestione dei fornitori",

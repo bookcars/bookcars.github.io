@@ -10,7 +10,7 @@
   "hero.cta": "Demostración en vivo",
   "hero.get_started": "Comenzar",
   "about.title": "Gratis, Multiplataforma, Código Abierto",
-  "about.description": "BookCars es una plataforma de alquiler de coches de código abierto bajo licencia MIT. Esto significa que puedes usarla, modificarla, compartirla o incluso venderla. Funciona sin problemas en web, Android y iOS.",
+  "about.description": "BookCars es una plataforma de alquiler de coches gratuita y de código abierto bajo licencia MIT, por lo que puedes usarla, modificarla, compartirla o incluso venderla libremente. Admite tanto el modo de un solo proveedor como el de varios proveedores, con las pasarelas de pago Stripe y PayPal integradas. Su tarificación flexible permite que cada coche tenga tarifas por hora, diarias, semanales, quincenales y mensuales, precios con descuento, tarifas según la fecha y una tasa de variación de precio por proveedor, todo combinado en un cálculo dinámico del precio. La plataforma está disponible en 8 idiomas (inglés, francés, español, alemán, portugués, italiano, chino y japonés) y admite 134 monedas. Está protegida contra los ataques web más comunes (XSS, CSRF, MITM y DDoS), incluye monitorización de errores con Sentry y se despliega fácilmente con Docker. Funciona sin problemas en web, Android y iOS.",
   "features.title": "Características",
   "features.supplier_title": "Gestión de proveedores y flotas",
   "features.supplier_management": "Gestión de proveedores",
