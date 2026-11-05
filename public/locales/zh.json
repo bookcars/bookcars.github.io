@@ -10,7 +10,7 @@
   "hero.cta": "在线演示",
   "hero.get_started": "开始使用",
   "about.title": "免费、跨平台、开源",
-  "about.description": "BookCars 是一款免费开源的汽车租赁平台，采用 MIT 许可，您可以自由使用、修改、分享甚至出售。它同时支持单供应商和多供应商模式，并内置 Stripe 和 PayPal 支付网关。灵活的定价允许每辆车设置小时、日、周、双周和月租价格，以及折扣价格、按日期设置的价格和供应商价格变动率，并通过动态价格计算将它们组合在一起。平台支持 8 种语言（英语、法语、西班牙语、德语、葡萄牙语、意大利语、中文和日语）和 134 种货币。它可抵御常见的网络攻击（XSS、CSRF、MITM 和 DDoS），通过 Sentry 提供错误监控，并可使用 Docker 轻松部署。它在网页、Android 和 iOS 上运行流畅。",
+  "about.description": "BookCars 是一款免费开源的汽车租赁平台，采用 MIT 许可，您可以自由使用、修改、分享甚至出售。它同时支持单供应商和多供应商模式，并内置 Stripe 和 PayPal 支付网关。灵活的定价允许每辆车设置小时、日、周、双周和月租价格，以及折扣价格、按日期设置的价格和供应商价格变动率，并通过动态价格计算将它们组合在一起。平台支持 8 种语言（英语、法语、西班牙语、德语、葡萄牙语、意大利语、中文和日语）和 134 种货币。它可抵御常见的网络攻击（XSS、CSRF、MITM 和 DDoS），并通过 JWT 身份验证、基于 Redis 的速率限制、公共表单上的 Google reCAPTCHA 以及请求验证来保障安全。它还通过 Sentry 提供错误监控，并可使用 Docker 轻松部署。它在网页、Android 和 iOS 上运行流畅。",
   "features.title": "功能",
   "features.supplier_title": "供应商与车队管理",
   "features.supplier_management": "供应商管理",
