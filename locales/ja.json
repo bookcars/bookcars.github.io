@@ -1,5 +1,6 @@
 {
   "website.title": "BookCars - オープンソースのカー・レンタルプラットフォーム",
+  "website.description": "BookCarsは、カスタマイズ性が高く、スケーラブルでコスト効率の良いカー・レンタルソリューションです。その強力な機能セットとオープンソースの特性により、レンタル業界の長期的な成長において持続可能な選択肢となります。",
   "title": "BookCars",
   "nav.features": "機能",
   "nav.demo": "デモ",

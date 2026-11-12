@@ -1,5 +1,6 @@
 {
   "website.title": "BookCars - 开源汽车租赁平台",
+  "website.description": "BookCars 是一款高度可定制、可扩展且具有成本效益的汽车租赁解决方案。其强大的功能集和开源特性使其成为租赁行业长期发展的可持续选择。",
   "title": "BookCars",
   "nav.features": "功能",
   "nav.demo": "演示",
